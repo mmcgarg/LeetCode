@@ -6,7 +6,7 @@ package leetcode;
  *         link: https://leetcode.com/problems/palindrome-number/
  *
  */
-public class Problem9PalindromeNumber {
+public class Problem0009PalindromeNumber {
 
 	public static boolean isPalindrome(int x) {
 		boolean palindrome = false;

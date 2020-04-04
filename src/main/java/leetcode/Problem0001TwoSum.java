@@ -13,8 +13,8 @@ import org.apache.logging.log4j.Logger;
  *         Problem's details: https://leetcode.com/problems/two-sum/
  *
  */
-public class Problem1TwoSum {
-	private static final Logger logger = LogManager.getLogger(Problem1TwoSum.class);
+public class Problem0001TwoSum {
+	private static final Logger logger = LogManager.getLogger(Problem0001TwoSum.class);
 
 	public static int[] twoSum(int[] nums, int target) {
 		Map<Integer, Integer> complimentValues = new HashMap<>();
@@ -33,7 +33,7 @@ public class Problem1TwoSum {
 		int[] nums = { 2, 7, 11, 15 };
 		int target = 9;
 
-		int[] twoSum = Problem1TwoSum.twoSum(nums, target);
+		int[] twoSum = Problem0001TwoSum.twoSum(nums, target);
 
 		logger.info(Arrays.toString(twoSum));
 

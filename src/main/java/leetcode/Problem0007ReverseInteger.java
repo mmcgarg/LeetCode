@@ -6,7 +6,7 @@ package leetcode;
  *         link: https://leetcode.com/problems/reverse-integer/
  *
  */
-public class Problem7ReverseInteger {
+public class Problem0007ReverseInteger {
 
 	public static int reverse(int x) {
 		int reverse = 0;
