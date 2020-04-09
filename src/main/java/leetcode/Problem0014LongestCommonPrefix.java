@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Logger;
 /**
  * @author mmcgarg
  *
+ *         link: https://leetcode.com/problems/longest-common-prefix
+ *
  */
 public class Problem0014LongestCommonPrefix {
 	private static final Logger logger = LogManager.getLogger(Problem0014LongestCommonPrefix.class);
@@ -17,6 +19,7 @@ public class Problem0014LongestCommonPrefix {
 		for (int i = 0; i < strs.length; i++) {
 			if (minLength == null || minLength > strs[i].length()) {
 				minLength = strs[i].length();
+
 				minLengthString = strs[i];
 			}
 		}
