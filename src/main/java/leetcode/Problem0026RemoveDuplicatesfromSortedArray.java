@@ -7,6 +7,10 @@ import java.util.LinkedList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * @author mmcgarg
+ *
+ */
 public class Problem0026RemoveDuplicatesfromSortedArray {
 	private static final Logger logger = LogManager.getLogger(Problem0026RemoveDuplicatesfromSortedArray.class);
 
@@ -39,7 +43,7 @@ public class Problem0026RemoveDuplicatesfromSortedArray {
 			previous = nums[i];
 		}
 
-		logger.info("Resulted numbers: {}", Arrays.asList(nums));
+		logger.info("Output numbers: {}", Arrays.asList(nums));
 
 		return newLength;
 
