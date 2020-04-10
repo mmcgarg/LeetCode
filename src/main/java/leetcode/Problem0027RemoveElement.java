@@ -5,6 +5,10 @@ import java.util.Arrays;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * @author mmcgarg
+ *
+ */
 public class Problem0027RemoveElement {
 
 	private static final Logger logger = LogManager.getLogger(Problem0027RemoveElement.class);
