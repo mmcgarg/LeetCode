@@ -13,7 +13,7 @@ public class Problem0007ReverseInteger {
 		int temp;
 
 		try {
-			if (x == Integer.MIN_VALUE || x < Integer.MIN_VALUE || x > Integer.MAX_VALUE) {
+			if (x <= Integer.MIN_VALUE || x > Integer.MAX_VALUE) {
 				return reverse;
 			} else {
 				while (x != 0) {

@@ -1,6 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,6 +16,8 @@ public class Problem0001TwoSum {
 	private static final Logger logger = LogManager.getLogger(Problem0001TwoSum.class);
 
 	public static int[] twoSum(int[] nums, int target) {
+		logger.info("Target value is: {}", target);
+
 		Map<Integer, Integer> complimentValues = new HashMap<>();
 
 		for (int i = 0; i < nums.length; i++) {
@@ -29,13 +30,4 @@ public class Problem0001TwoSum {
 		return new int[0];
 	}
 
-	public static void main(String[] args) {
-		int[] nums = { 2, 7, 11, 15 };
-		int target = 9;
-
-		int[] twoSum = Problem0001TwoSum.twoSum(nums, target);
-
-		logger.info(Arrays.toString(twoSum));
-
-	}
 }

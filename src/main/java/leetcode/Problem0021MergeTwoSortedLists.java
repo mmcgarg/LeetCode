@@ -15,7 +15,7 @@ class ListNode {
  *         link: https://leetcode.com/problems/merge-two-sorted-lists/
  *
  */
-public class Problem21MergeTwoSortedLists {
+public class Problem0021MergeTwoSortedLists {
 
 	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		if (l2 == null) {

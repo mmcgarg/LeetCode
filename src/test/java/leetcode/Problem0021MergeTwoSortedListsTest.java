@@ -4,13 +4,13 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-public class Problem21MergeTwoSortedListsTest {
+public class Problem0021MergeTwoSortedListsTest {
 
 	@Test
 	public void mergeTwoListsTest() {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(1);
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 		assertEquals(actual.val, 1);
@@ -22,7 +22,7 @@ public class Problem21MergeTwoSortedListsTest {
 	public void mergeTwoListsTest2() {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = null;
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 	}
@@ -31,7 +31,7 @@ public class Problem21MergeTwoSortedListsTest {
 	public void mergeTwoListsTest3() {
 		ListNode l1 = null;
 		ListNode l2 = new ListNode(2);
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 2);
 	}
@@ -42,7 +42,7 @@ public class Problem21MergeTwoSortedListsTest {
 		l1.next = new ListNode(4);
 		ListNode l2 = new ListNode(1);
 		l2.next = new ListNode(2);
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 		actual = actual.next;
@@ -61,7 +61,7 @@ public class Problem21MergeTwoSortedListsTest {
 		ListNode l2 = new ListNode(1);
 		l2.next = new ListNode(3);
 		l2.next.next = new ListNode(4);
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 		actual = actual.next;
@@ -80,7 +80,7 @@ public class Problem21MergeTwoSortedListsTest {
 	public void mergeTwoListsTest6() {
 		ListNode l1 = new ListNode(5);
 		ListNode l2 = new ListNode(1);
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 		assertEquals(actual.next.val, 5);
@@ -90,7 +90,7 @@ public class Problem21MergeTwoSortedListsTest {
 	public void mergeTwoListsTest7() {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(2);
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 		actual = actual.next;
@@ -103,7 +103,7 @@ public class Problem21MergeTwoSortedListsTest {
 		ListNode l2 = new ListNode(1);
 		l2.next = new ListNode(2);
 		l2.next.next = new ListNode(4);
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 		actual = actual.next;
@@ -126,7 +126,7 @@ public class Problem21MergeTwoSortedListsTest {
 		next = next.next;
 		next.next = new ListNode(-6);
 
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, -9);
 		actual = actual.next;
@@ -149,7 +149,7 @@ public class Problem21MergeTwoSortedListsTest {
 		next.next = new ListNode(8);
 		ListNode l2 = new ListNode(9);
 
-		ListNode actual = Problem21MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		ListNode actual = Problem0021MergeTwoSortedLists.mergeTwoLists(l1, l2);
 
 		assertEquals(actual.val, 1);
 		actual = actual.next;
