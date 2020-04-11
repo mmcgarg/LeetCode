@@ -25,20 +25,20 @@ public class Problem0058LengthOfLastWord {
 		char[] charArray = s.toCharArray();
 		int start = 0;
 		int end = 0;
-		boolean noValidChar = true;
+		boolean validCharFound = false;
 
 		for (int i = charArray.length - 1; i >= 0; i--) {
-			if (charArray[i] == ' ' && start != 0)
+			if (charArray[i] == ' ' && validCharFound)
 				break;
 			else if (charArray[i] == ' ') {
 				end = i;
 			} else {
 				start = i;
-				noValidChar = false;
+				validCharFound = true;
 			}
 		}
 
-		if (noValidChar)
+		if (!validCharFound)
 			return 0;
 
 		return end <= start ? charArray.length - start : end - start;
