@@ -22,18 +22,11 @@ public class Problem0066PlusOne {
 	public static int[] plusOne(int[] digits) {
 		logger.info("Input array: {}", Arrays.asList(digits));
 
-		if (digits[digits.length - 1] != 9) {
-			digits[digits.length - 1] = digits[digits.length - 1] + 1;
-			return digits;
-		}
-
-		int carryValue = 0;
 		for (int i = digits.length - 1; i >= 0; i--) {
 			if (digits[i] == 9) {
 				digits[i] = 0;
-				carryValue = 1;
 			} else {
-				digits[i] += carryValue;
+				digits[i] += 1;
 				break;
 			}
 		}
