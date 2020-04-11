@@ -25,17 +25,16 @@ public class Problem0058LengthOfLastWord {
 		char[] charArray = s.toCharArray();
 		int start = 0;
 		int end = 0;
-		boolean reset = true;
 		boolean noValidChar = true;
 
-		for (int i = 0; i < charArray.length; i++) {
-			if (charArray[i] != ' ' && reset) {
-				noValidChar = false;
-				start = i;
-				reset = false;
-			} else if (start >= end && charArray[i] == ' ') {
+		for (int i = charArray.length - 1; i >= 0; i--) {
+			if (charArray[i] == ' ' && start != 0)
+				break;
+			else if (charArray[i] == ' ') {
 				end = i;
-				reset = true;
+			} else {
+				start = i;
+				noValidChar = false;
 			}
 		}
 
