@@ -47,4 +47,18 @@ public class Problem0058LengthOfLastWordTest {
 
 		assertEquals(actual, 0);
 	}
+
+	@Test
+	public void lengthOfLastWordTest7() {
+		int actual = Problem0058LengthOfLastWord.lengthOfLastWord("a ");
+
+		assertEquals(actual, 1);
+	}
+
+	@Test
+	public void lengthOfLastWordTest8() {
+		int actual = Problem0058LengthOfLastWord.lengthOfLastWord("  a  ");
+
+		assertEquals(actual, 1);
+	}
 }
