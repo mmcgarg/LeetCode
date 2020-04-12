@@ -24,15 +24,10 @@ public class Problem0119PascalTriangle {
 		List<Integer> result = new ArrayList<>();
 		logger.info("Row index to return: {}", rowIndex);
 
-		for (int i = 1; i <= rowIndex + 1; i++) {
+		for (int i = 0; i < rowIndex + 1; i++) {
 			result.add(1);
-			for (int j = i - 1; j >= 0; j--) {
-				if (0 == j)
-					result.set(j, 1);
-				else if (i - 1 == j)
-					result.set(j, 1);
-				else if (i > 2)
-					result.set(j, result.get(j - 1) + result.get(j));
+			for (int j = i - 1; j > 0; j--) {
+				result.set(j, result.get(j - 1) + result.get(j));
 			}
 		}
 
