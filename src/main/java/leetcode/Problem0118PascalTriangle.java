@@ -24,16 +24,16 @@ public class Problem0118PascalTriangle {
 		List<List<Integer>> result = new ArrayList<>();
 		logger.info("Number of rows: {}", numRows);
 
-		for (int i = 1; i <= numRows; i++) {
+		for (int i = 0; i < numRows; i++) {
 			List<Integer> row = new ArrayList<>();
 			result.add(row);
-			for (int j = 0; j < i; j++) {
+			for (int j = 0; j <= i; j++) {
 				if (0 == j)
 					row.add(j, 1);
-				else if (i - 1 == j)
+				else if (j == i)
 					row.add(j, 1);
-				else if (i > 2)
-					row.add(result.get(i - 2).get(j - 1) + result.get(i - 2).get(j));
+				else if (i > 1)
+					row.add(result.get(i - 1).get(j - 1) + result.get(i - 1).get(j));
 			}
 		}
 
